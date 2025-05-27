@@ -6,8 +6,28 @@ const app = express();
 const cors = require('cors'); // Import CORS middleware
 
 // Enable CORS for all origins (or specify only your frontend)
-app.use(cors({ origin: 'https://panchang-puzzle.glitch.me' }));
-app.use(cors({ origin: 'https://pd2.github.io/' }));
+// app.use(cors({ origin: 'https://panchang-puzzle.glitch.me' }));
+// app.use(cors({ origin: 'https://pd2.github.io/' }));
+
+// List of allowed origins
+const allowedOrigins = [
+  'https://panchang-puzzle.glitch.me',
+  'https://pd2.github.io',
+  // add more origins as needed
+];
+
+// Enable CORS dynamically based on origin
+app.use(cors({
+  origin: function (origin, callback) {
+    // Allow requests with no origin (like from curl or mobile apps)
+    if (!origin) return callback(null, true);
+    if (allowedOrigins.includes(origin)) {
+      return callback(null, true);
+    } else {
+      return callback(new Error('Not allowed by CORS'));
+    }
+  }
+}));
 
 let year, month, day;
 
