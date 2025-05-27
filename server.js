@@ -7,6 +7,7 @@ const cors = require('cors'); // Import CORS middleware
 
 // Enable CORS for all origins (or specify only your frontend)
 app.use(cors({ origin: 'https://panchang-puzzle.glitch.me' }));
+app.use(cors({ origin: 'https://pd2.github.io/' }));
 
 let year, month, day;
 
