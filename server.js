@@ -13,6 +13,7 @@ const cors = require('cors'); // Import CORS middleware
 const allowedOrigins = [
   'https://panchang-puzzle.glitch.me',
   'https://pd2.github.io',
+  'https://zat.am',
   // add more origins as needed
 ];
 
