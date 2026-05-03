@@ -14,6 +14,7 @@ const allowedOrigins = [
   'https://panchang-puzzle.glitch.me',
   'https://pd2.github.io',
   'https://zat.am',
+  'https://pradeepd.com',
   // add more origins as needed
 ];
 
