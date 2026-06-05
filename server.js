@@ -15,7 +15,7 @@ const allowedOrigins = [
   'https://pd2.github.io',
   'https://zat.am',
   'https://pradeepd.com',
-  'https://wistler-games.github.io/',
+  'https://wistler-games.github.io',
   // add more origins as needed
 ];
 
