@@ -15,6 +15,7 @@ const allowedOrigins = [
   'https://zat.am',
   'https://pradeepd.com',
   'https://wistler-games.github.io',
+  'https://zatam-ver1.vercel.app/',
   // add more origins as needed
 ];
 
