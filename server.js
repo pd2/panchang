@@ -14,6 +14,7 @@ const allowedOrigins = [
   'https://pd2.github.io',
   'https://zat.am',
   'https://pradeepd.com',
+  'https://www.pradeepd.com',
   'https://wistler-games.github.io',
   'https://zatam-ver1.vercel.app',
   // add more origins as needed
